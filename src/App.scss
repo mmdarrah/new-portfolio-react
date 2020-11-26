@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+//Font
+$font: Anton, sans-serif;
+
+// Light theme colors
+$hero-light-color: #f2c36b;
+$primary-light-color: #27a4f2;
+$secondary-light-color: #6dccf2;
+$touches-light-color: #57b7f2;
+$background-light-color: #f0f1f2;
+// Dark theme colors
+/* $primary-dark-color: #025373;
+$secondary-dark-color: #037f8c;
+$touches-dark-color: #025e73;
+$background-dark-color: #081226;
+$hero-dark-color: #bf5841; */
+$hero-dark-color: #04d9b2;
+$primary-dark-color: #2b1773;
+$secondary-dark-color: #04bfad;
+$touches-dark-color: #5259d9;
+$background-dark-color: #201f40;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background-light-color;
+  font-family: $font;
+}
+
+//Nav
+
+nav {
+  height: 60vh;
+  width: 20vw;
+  background-color: $hero-light-color;
+  position: fixed;
+  right: 10vw;
+  min-width: 200px;
+  min-height: 180px;
+
+  ul {
+    position: relative;
+    top: 35vh;
+    left: 1vw;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width: 40%;
+    height: 30%;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  a {
+    text-decoration: none;
+    color: $primary-light-color;
+  }
+}
