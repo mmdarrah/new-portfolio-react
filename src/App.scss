@@ -96,19 +96,41 @@ nav {
       -webkit-clip-path: inset(0 0 100% 100%);
       transition: all 0.2s ease-out;
       font-size: 2rem;
+      pointer-events: none;
     }
 
     .nav-open {
       clip-path: inset(0 0 0 0);
       -webkit-clip-path: inset(0 0 0 0);
+      pointer-events: all;
     }
     ul {
       position: relative;
       top: 20vh;
       left: 0;
     }
+    li {
+      opacity: 0;
+    }
     a {
       color: $primary-light-color;
+    }
+
+    .nav-links li:nth-child(1) {
+      transition: all 0.5s ease 0.05s;
+    }
+    .nav-links li:nth-child(2) {
+      transition: all 0.5s ease 0.009s;
+    }
+    .nav-links li:nth-child(3) {
+      transition: all 0.5s ease 0.1s;
+    }
+    .nav-links li:nth-child(4) {
+      transition: all 0.5s ease 0.2s;
+    }
+
+    .fade {
+      opacity: 1;
     }
   }
 }

@@ -3,6 +3,10 @@ function Nav() {
   const navLinks = useRef();
   const hamburger = () => {
     navLinks.current.classList.toggle('nav-open');
+    let links = Array.from(navLinks.current.children);
+    links.forEach((link) => {
+      link.classList.toggle('fade');
+    });
   };
 
   return (
