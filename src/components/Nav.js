@@ -1,14 +1,18 @@
-import React from 'react';
-
+import React, { useRef } from 'react';
 function Nav() {
+  const navLinks = useRef();
+  const hamburger = () => {
+    navLinks.current.classList.toggle('nav-open');
+  };
+
   return (
     <nav>
-      <div className='hamburger'>
+      <div onClick={hamburger} className='hamburger'>
         <div className='line'></div>
         <div className='line'></div>
         <div className='line'></div>
       </div>
-      <ul className='nav-links'>
+      <ul ref={navLinks} className='nav-links'>
         <li>
           <a href='#'>Home</a>
         </li>
