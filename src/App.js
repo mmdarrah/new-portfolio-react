@@ -1,9 +1,12 @@
 import './App.scss';
-import Nav from './components/Nav';
+import Layout from './components/Layout';
+import DarkMode from './components/DarkMode';
 function App() {
   return (
     <div className='App'>
-      <Nav />
+      <DarkMode>
+        <Layout />
+      </DarkMode>
     </div>
   );
 }

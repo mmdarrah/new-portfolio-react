@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+
 function Nav() {
   const navLinks = useRef();
   const hamburger = () => {
